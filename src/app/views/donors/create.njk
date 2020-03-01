@@ -1,0 +1,10 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section class="form hide">
+        <h2>Entre na lista de doadores</h2>
+        <form action="/donors" method="POST">
+            {% include 'donors/fields.njk' %}
+        </form>
+    </section>
+{% endblock content %}
